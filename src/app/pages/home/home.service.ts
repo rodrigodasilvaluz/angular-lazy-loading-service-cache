@@ -41,7 +41,7 @@ export class HomeService {
           success: home,
         })),
         catchError(() =>
-          of({ error: 'Não foi possível carregar a jsonplaceholder' })
+          of({ error: 'Não foi possível carregar a jsonplaceholder with parm refresh' })
         )
       );
   }
