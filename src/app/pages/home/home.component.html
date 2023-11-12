@@ -1,0 +1,8 @@
+<p>home works!</p>
+<button (click)="getHomeWithRefresh()">Get results</button> <input type="checkbox" [(ngModel)]="refresh" /> Get latest results
+<div *ngIf="home.error">Ocorreu um erro: {{ home.error }}</div>
+<ul *ngIf="home.success">
+  <li *ngFor="let item of home.success">
+    {{ item.title }}
+  </li>
+</ul>
